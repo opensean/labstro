@@ -1,0 +1,33 @@
+{
+  "$id": "schema/default.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A representation of calling a task with args and kwargs",
+  "type": "object",
+  "required": ["args"],
+  "properties": {
+    "args": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/arg" }
+      }
+    },
+  "definitions": {
+    "arg": {
+      "type": "object",
+      "required": [ "callback" ],
+      "properties": {
+        "callback": {
+          "type": "object",
+          "description": "Instructions urls format.",
+	  "required":["urls"],
+	  "properties": {
+		  "urls":{
+			  "type":"array",
+			  "minItems": 1,
+			  "items": {"type":"string"}
+		  }
+	  }
+	}
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "instructions": [
+    {
+      "op": "seal",
+      "object": "test pcr plate",
+      "type": "foil",
+      "mode": "thermal",
+      "mode_params": {
+        "temperature": "165:celsius",
+        "duration": "1.5:second"
+      }
+    },
+    {
+      "op": "spin",
+      "object": "test pcr plate",
+      "acceleration": "1000:g",
+      "duration": "1:minute"
+    }
+  ],
+  "refs": {
+    "test pcr plate": {
+      "new": "96-pcr",
+      "discard": true
+    }
+  }
+}
