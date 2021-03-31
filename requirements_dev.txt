@@ -38,7 +38,7 @@ Jinja2==2.10.3
 jsonschema==3.1.1
 kiwisolver==1.1.0
 kombu==4.6.5
-lxml==4.4.1
+lxml==4.6.3
 MarkupSafe==1.1.1
 matplotlib==3.1.1
 mccabe==0.6.1
